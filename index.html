@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profit Pro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <img src="logo.jfif" alt="Logo" id="logo-image">
+      </div>
+      <h1>Profit Pro: An Interactive Pricing Strategy Simulator</h1>
+    </div>
+  </header>
+  
+
+  <!-- Navigation Menu -->
+  <nav class="navbar">
+    <div class="nav-item"><a href="index.html">ABOUT</a></div>
+    <div class="nav-item"><a href="topics.html">TOPICS</a></div>
+    <div class="nav-item"><a href="price.html">PRICING STRATEGIES</a></div>
+    <div class="nav-item"><a href="case.html">CASE STUDIES</a></div>
+    <div class="nav-item"><a href="index.html">FEEDBACK</a></div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="main-content">
+      <!-- Simulator Section -->
+  
+      <table class="input-table">
+        <thead>
+          <tr>
+            <th>Input Parameters</th>
+            <th>Value</th>
+            <th>Formula/Output Metrics</th>
+            <th>Value (Output)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Product Name</td>
+            <td><input type="text" id="productName" placeholder="Enter Product Name"></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+          </tr>
+          <tr>
+            <td>Description</td>
+            <td><textarea id="productDescription" rows="2" placeholder="Enter Product Description"></textarea></td>
+          </tr>
+          <tr>
+            <td>COGS (Cost of Goods Sold)</td>
+            <td><input type="number" id="cogs" placeholder="Enter COGS"></td>
+            <td>Selling Price</td>
+            <td><input type="number" id="sellingPrice" readonly></td>
+          </tr>
+          <tr>
+            <td>Fixed Costs</td>
+            <td><input type="number" id="fixedCosts" placeholder="Enter Fixed Costs"></td>
+            <td>Total Revenue</td>
+            <td><input type="number" id="totalRevenue" readonly></td>
+          </tr>
+          <tr>
+            <td>Variable Costs</td>
+            <td><input type="number" id="variableCosts" placeholder="Enter Variable Costs"></td>
+            <td>Profit Per Unit</td>
+            <td><input type="number" id="profitPerUnit" readonly></td>
+          </tr>
+          <tr>
+            <td>Desired Profit Margin (%)</td>
+            <td><input type="number" id="profitMargin" placeholder="Enter Profit Margin %"></td>
+            <td>Total Profit</td>
+            <td><input type="number" id="totalProfit" readonly></td>
+          </tr>
+          <tr>
+            <td>Estimated Sales Volume</td>
+            <td><input type="number" id="salesVolume" placeholder="Enter Sales Volume"></td>
+            <td>Break-even Units</td>
+            <td><input type="number" id="breakEvenUnits" readonly></td>
+          </tr>
+          <tr>
+            <td>Elasticity of Demand</td>
+            <td><input type="number" id="elasticity" placeholder="Enter Elasticity of Demand"></td>
+            <td>Suggested Pricing Strategy</td>
+            <td><input type="text" id="pricingStrategy" readonly></td>
+          </tr>
+          <tr>
+            <td>Competitor Pricing</td>
+            <td><input type="number" id="competitorPricing" placeholder="Enter Competitor Pricing"></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Discount (if any)</td>
+            <td><input type="number" id="discount" placeholder="Enter Discount"></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <!-- Add button below Discount row -->
+          <tr>
+            <td colspan="4" style="text-align: center;">
+              <button class="calculate-button" onclick="calculate()">Calculate</button>
+              <button class="clear-button" onclick="clearInputs()">Clear</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      
+      <!-- Other Sections (About, Topics, Case Studies, Feedback) -->
+      <div class="info-sections">
+        <section class="section">
+          <h2>About</h2>
+          <p>Profit Pro is a website that is designed to help business to analyze various pricing strategies for their products and services. It allows users to input different pricing variables and market conditions to learn how changes influence demand, revenue, and profitability. By using this website, users will be more equipped and make right decisions about which pricing strategies to utilize.     
+            This tool primarily helps to solve issue regarding agricultural pricing and dynamic pricing in E-commerce. Profit Pro can help farmers to analyze optimal pricing based on data, demand, forecasting, and competition, ensuring to maximize their income. Moreover, this tool can play a significant role in different pricing scenarios that businesses will encounter. It can enable them to maximize their sales while maintaining competitiveness.</p>
+        </section>
+        <section class="section">
+          <h2>Topics</h2>
+          <ul>
+            <li><a href="topics.html#product-service-details">Product/Service Details</a></li>
+            <li><a href="topics.html#cost-structure">Cost Structure</a></li>
+            <li><a href="topics.html#target-metrics">Target Metrics</a></li>
+            <li><a href="topics.html#pricing-strategy">Pricing Strategy Decisions</a></li>
+            <li><a href="topics.html#price-sensitivity">Price Sensitivity Factors</a></li>
+            <li><a href="topics.html#discounts-promotions">Discounts and Promotions</a></li>
+            <li><a href="topics.html#sales-estimates">Sales Estimates</a></li>
+            <li><a href="topics.html#revenue-assumptions">Revenue and Cost Assumptions</a></li>
+            <li><a href="topics.html#advanced-variables">Advanced Variables for Simulation</a></li>
+          </ul>
+        </section>
+        
+
+        <!-- <section class="section">
+          <h2>Examples of Case Studies</h2>
+        </section> -->
+
+        <section class="section">
+          <h2>Feedback from Users</h2>
+          <form class="feedback-form" id="feedback-form">
+            <label for="user-name">Your Name:</label>
+            <input type="text" id="user-name" placeholder="Enter your name" required>
+        
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" rows="5" placeholder="Write your feedback here..." required></textarea>
+            <button type="submit">Submit Feedback</button>
+          </form>
+        
+          <div class="feedback-results">
+            <h3>User Feedback:</h3>
+            <ul id="feedback-list">
+              <!-- Feedback entries will appear here -->
+            </ul>
+          </div>
+        </section>
+        
+        
+      </div>
+    </div>
+  </main>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
+

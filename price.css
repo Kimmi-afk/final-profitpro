@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8F3; /* Off-White Background */
+    color: #333333; /* Dark Charcoal Text */
+  }
+  
+  /* Header Section */
+  .header {
+    background-color: #2D6A4F; /* Green */
+    color: #FFF8F3; /* Off-White */
+    padding: 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 15px; /* Add spacing between the logo and the heading */
+  }
+  
+  .logo img {
+    max-width: 100px; /* Restrict logo size */
+    height: auto;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  
+  /* Navigation Menu */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333333; /* Dark Charcoal */
+    padding: 10px 0;
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+    color: #FFF8F3; /* Off-White */
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .nav-item:hover {
+    color: #FF6F20; /* Orange */
+  }
+  
+  /* Main Content */
+  .main {
+    padding: 20px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #FFF8F3; /* Off-White */
+    border: 1px solid #D1D1D1; /* Soft Grey */
+    border-radius: 8px;
+  }
+  
+  .section h2 {
+    color: #2D6A4F; /* Green */
+  }
+  
+  /* Explore Our Topics Section */
+  .section ul {
+    display: flex; /* Enables horizontal layout for the remaining topics */
+    flex-wrap: wrap; /* Allows wrapping to a new row if needed */
+    list-style: none; /* Removes default list styling */
+    padding: 0;
+    margin: 10px 0 0 0; /* Adds space above the horizontal list */
+    justify-content: space-around; /* Evenly spaces out items */
+  }
+  
+  .section ul li {
+    margin: 10px 15px; /* Adds spacing between items */
+    position: relative;
+    padding-left: 15px; /* Creates space for the custom bullet */
+  }
+  
+  .section ul li::before {
+    content: "•"; /* Custom bullet point */
+    position: absolute;
+    left: 0; /* Positions bullet to the left of the text */
+    color: #333333; /* Dark Charcoal bullet color */
+  }
+  
+  /* Standalone Item Below the Heading */
+  .standalone-item {
+    list-style: none; /* Removes default list styling */
+    margin: 10px 0; /* Adds spacing */
+    font-weight: bold; /* Optional: Highlight it */
+    color: #2D6A4F; /* Green */
+  }
+  
+  /* Link Styling */
+  .section ul li a,
+  .standalone-item a {
+    text-decoration: none; /* Removes underline */
+    color: #000000; /* Black text color */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .section ul li a:hover,
+  .standalone-item a:hover {
+    color: #FF6F20; /* Orange text on hover */
+  }
+
+  /* General Link Styling */
+a {
+    text-decoration: none; /* Removes underline */
+    color: #FFF8F3; /* Sets text color to Off-White */
+    transition: color 0.3s; /* Adds a smooth color change effect on hover */
+  }
+  
+  /* Link Hover Effect */
+  a:hover {
+    color: #FF6F20; /* Changes color to Orange when hovered */
+  }
+  
+  /* General Link Styling for Topics Section */
+  .section ul li a {
+    text-decoration: none; /* Removes underline */
+    color: #000000; /* Sets text color to black */
+    transition: color 0.3s ease-in-out; /* Adds a smooth color change effect on hover */
+  }
+  
+  /* Link Hover Effect */
+  .section ul li a:hover {
+    color: #FF6F20; /* Changes color to Orange when hovered */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+ /* Glowing effect for clicked topic */
+.glowing {
+    color: #FF6F20; /* Orange */
+    text-shadow: 0 0 10px rgba(255, 111, 32, 0.8), 0 0 20px rgba(255, 111, 32, 0.8), 0 0 30px rgba(255, 111, 32, 0.8);
+}
+
+/* Optional: Apply glowing effect to specific topc */
+#pricing-strategy.glowing h2 {
+    color: #FF6F20; /* Orange */
+    text-shadow: 0 0 10px rgba(255, 111, 32, 0.8), 0 0 20px rgba(255, 111, 32, 0.8), 0 0 30px rgba(255, 111, 32, 0.8);
+  }
+
+/* Links style */
+.topic-link {
+    color: #333333; /* Default color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  .topic-link:hover {
+    color: #FF6F20; /* Orange color on hover */
+  }
+  
+  
+  /* Style for links inside paragraphs only */
+.paragraph-link {
+    color: blue;
+  }
+  
+  .paragraph-link:hover {
+    color: darkblue; /* Optional: changes the link color when hovered */
+  }
+
+  /*Glowing effect*/
+  .pricing-strategy-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  .pricing-strategy-table th, .pricing-strategy-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for glowing effect */
+  }
+  
+  /* Apply glowing effect inside the table cells */
+.pricing-strategy-table td {
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.pricing-strategy-table td:hover {
+  background-color: rgba(255, 165, 0, 0.2); /* Optional: light background glow */
+  color: #fff; /* Optional: change text color to make it stand out */
+  text-shadow: 0 0 10px rgba(255, 165, 0, 1), 0 0 20px rgba(255, 165, 0, 0.7), 0 0 30px rgba(255, 165, 0, 0.5); /* Glowing text effect */
+  box-shadow: 0 0 20px rgba(255, 165, 0, 1); /* Glowing cell border */
+}
+
+  
+  .pricing-strategy-table a {
+    text-decoration: none;
+    color: #007BFF;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .pricing-strategy-table a:hover {
+    background-color: #f0f8ff;
+    color: #0056b3;
+  }
+  
+  

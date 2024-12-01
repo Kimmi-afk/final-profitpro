@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8F3; /* Off-White Background */
+    color: #333333; /* Dark Charcoal Text */
+}
+
+/* Header Section */
+.header {
+    background-color: #2D6A4F; /* Green */
+    color: #FFF8F3; /* Off-White */
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* Navigation Menu */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333333; /* Dark Charcoal */
+    padding: 10px 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+    color: #FFF8F3; /* Off-White */
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: #FF6F20; /* Orange */
+}
+
+/* Main Content */
+.main {
+    padding: 15px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto; /* Centers the main content horizontally */
+    text-align: center; /* Centers the text inside the sections */
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #FFF8F3;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    text-align: left; /* Centers text inside sections */
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+
+.section h2 {
+    color: #2D6A4F; /* Green */
+}
+
+/* Links style */
+a {
+    text-decoration: none;
+    color: #FFF8F3; /* Off-White */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #FF6F20; /* Orange */
+}
+
+/* Topic Link Styling */
+.topic-link {
+    color: #333333;
+    font-weight: bold;
+}
+
+.topic-link:hover {
+    color: #FF6F20; /* Orange color on hover */
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style for links inside paragraphs only */
+.paragraph-link {
+    color: blue;
+  }
+  
+  .paragraph-link:hover {
+    color: darkblue; /* Optional: changes the link color when hovered */
+  }
+  
+  

@@ -1,0 +1,318 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF8F3; /* Off-White Background */
+  color: #333333; /* Dark Charcoal Text */
+}
+
+/* Header Section */
+.header {
+  background-color: #2D6A4F; /* Green */
+  color: #FFF8F3; /* Off-White */
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: flex-start; /* Align items to the left */
+  gap: 15px; /* Add spacing between the logo and the heading */
+}
+
+.logo img {
+  max-width: 100px; /* Restrict logo size */
+  height: auto;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+/* Navigation Menu */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333333; /* Dark Charcoal */
+  padding: 10px 0;
+}
+
+.nav-item {
+  margin: 0 15px;
+  color: #FFF8F3; /* Off-White */
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: #FF6F20; /* Orange */
+}
+
+/* Main Content */
+.main {
+  display: flex;
+  justify-content: space-between; /* Place content on both sides */
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Simulator Section */
+.simulator {
+  margin-right: 40px;
+  padding: 40px;
+  background-color: #FFF8F3; /* Off-White */
+  border: 2px solid #D1D1D1; /* Soft Grey */
+  border-radius: 12px;
+  max-width: 45%; /* Set the width of the simulator */
+}
+
+.simulator h2 {
+  color: #2D6A4F; /* Green */
+  font-size: 2em; /* Increase heading size */
+  margin-bottom: 20px;
+}
+
+.simulator-form label {
+  display: block;
+  margin: 15px 0 5px;
+  color: #333333; /* Dark Charcoal */
+  font-size: 1.2em; /* Larger label text */
+}
+
+.simulator-form input {
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px; /* Increase the max width of input fields */
+  border: 1px solid #D1D1D1; /* Soft Grey */
+  border-radius: 8px; /* Larger border radius */
+  background-color: #FFF8F3; /* Off-White */
+  color: #333333; /* Dark Charcoal */
+  font-size: 1.1em; /* Larger input text */
+}
+
+.simulator-form input:focus {
+  border-color: #2D6A4F; /* Green */
+}
+
+.simulator-form button {
+  padding: 15px 20px;
+  color: #FFF8F3; /* Off-White */
+  background-color: #2D6A4F; /* Green */
+  border: none;
+  border-radius: 8px; /* Larger button border radius */
+  cursor: pointer;
+  font-size: 1.1em; /* Larger button text */
+  transition: background-color 0.3s;
+}
+
+.simulator-form button:hover {
+  background-color: #6FBF73; /* Light Green */
+}
+
+.results-dashboard {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #FFF8F3; /* Off-White */
+  border: 1px solid #D1D1D1; /* Soft Grey */
+  border-radius: 8px;
+}
+
+.results-dashboard h3 {
+  color: #2D6A4F; /* Green */
+  font-size: 1.4em; /* Larger result heading */
+}
+
+#profit-result {
+  color: #FF6F20; /* Orange */
+  font-size: 1.5em; /* Larger result text */
+  font-weight: bold;
+}
+
+/* Info Sections (About, Topics, etc.) */
+.info-sections {
+  width: 55%; /* Set width for right side */
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #FFF8F3; /* Off-White */
+  border: 1px solid #D1D1D1; /* Soft Grey */
+  border-radius: 8px;
+}
+
+.section h2 {
+  color: #2D6A4F; /* Green */
+}
+
+/* Feedback Section */
+.feedback-form {
+  margin-top: 20px;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333333; /* Dark Charcoal */
+  font-size: 1.2em;
+}
+
+.feedback-form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #D1D1D1; /* Soft Grey */
+  border-radius: 8px;
+  background-color: #FFF8F3; /* Off-White */
+  color: #333333; /* Dark Charcoal */
+  font-size: 1.1em;
+}
+
+.feedback-form button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #2D6A4F; /* Green */
+  color: #FFF8F3; /* Off-White */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.feedback-form button:hover {
+  background-color: #6FBF73; /* Light Green */
+}
+
+.feedback-results {
+  margin-top: 20px;
+}
+
+.feedback-results h3 {
+  color: #2D6A4F; /* Green */
+  font-size: 1.4em;
+}
+
+#feedback-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#feedback-list li {
+  background-color: #FFF8F3; /* Off-White */
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #D1D1D1; /* Soft Grey */
+  border-radius: 8px;
+}
+
+/* General Link Styling */
+a {
+  text-decoration: none; /* Removes underline */
+  color: #FFF8F3; /* Sets text color to Off-White */
+  transition: color 0.3s; /* Adds a smooth color change effect on hover */
+}
+
+/* Link Hover Effect */
+a:hover {
+  color: #FF6F20; /* Changes color to Orange when hovered */
+}
+
+/* General Link Styling for Topics Section */
+.section ul li a {
+  text-decoration: none; /* Removes underline */
+  color: #000000; /* Sets text color to black */
+  transition: color 0.3s ease-in-out; /* Adds a smooth color change effect on hover */
+}
+
+/* Link Hover Effect */
+.section ul li a:hover {
+  color: #FF6F20; /* Changes color to Orange when hovered */
+}
+
+
+ /* CSS OF NEW */
+table {
+  width: 43%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #f4f4f4;
+}
+input, textarea {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.calculate-button, .clear-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 0 5px;
+   border-radius: 8px;
+}
+
+.calculate-button:hover {
+  background-color: #0056b3;
+}
+
+.clear-button {
+  background-color: #FF4D4D;
+}
+
+.clear-button:hover {
+  background-color: #CC0000;
+}
+
+
+#feedback-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#feedback-list li {
+  display: flex;
+  justify-content: space-between; /* Spread out the feedback text and remove button */
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#feedback-list li button {
+  background-color: #ff4d4d; /* Red background for the Remove button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#feedback-list li button:hover {
+  background-color: #e60000; /* Darker red on hover */
+}
+
+#user-name {
+  width: 200px; /* Adjust the width to your preference */
+  padding: 5px;
+  font-size: 16px;
+}
